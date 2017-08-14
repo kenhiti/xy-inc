@@ -33,6 +33,10 @@ Entre no diretório /xy-inc , e execute:
 
 mvn clean install compile package
 
+Execute o JAR gerado na pasta target:
+
+java -jar Senior-1.0.0-SNAPSHOT.jar 
+
 ------------------------------------------------------------------------------------------------------------
 
 Para facilitar os testes, foi implementado no projeto a dependência do SWAGGER, uma interface amigável para acesso aos ENDPOINTS do projeto. 
