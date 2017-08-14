@@ -1,7 +1,7 @@
 # xy-inc
 Processo seletivo ZUP
 
-IDE de desenvolvimento Spring Tools Suite 3.7.3.RELEASE.
+IDE de desenvolvimento Spring Tools Suite 3.9.3.RELEASE.
 
 Configurado H2-Database  - Como banco para testes em desenvolvimento.
 
@@ -13,29 +13,31 @@ Aplicado a solução utilizando serviço RESTFul - Seguindo constraints definida
 
 Utilizado Spring Framework buscando produtividade e facilidade de integrações com outras frameworks.
 
+-------------------------------------------------------------------------------------------------------------
+
 Informações para execução do projeto.
 
-Para simplicar testes do WebService, importar o project no Spring Tools Suite.
+Importar o project no Spring Tools Suite ou IDE de sua preferência.
 
 Clique em File -> Import -> Existing Mavem Project -> e selecione pasta clonado através do GIT.
 
 Abra o arquivo ZupApplication, clique na opção RUN no menu superior, RUN AS -> SpringBootAPP.
 
-http://localhost:8080/products - Lista todos os produtos       -GET
+------------------------------------------------------------------------------------------------------------
 
-http://localhost:8080/products/{id} - Busca um produto por id  -GET
+Ou se preferir, abra o terminal, clone o projeto:
 
-http://localhost:8080/products - Cria um novo produto          -POST
+https://github.com/kenhiti/xy-inc.git  
 
-http://localhost:8080/products/{id} - Edita um produto         -PUT
+Entre no diretório /xy-inc , e execute:
 
-http://localhost:8080/products/{id} - Deleta um produto        -DELETE
+mvn clean install compile package
 
+------------------------------------------------------------------------------------------------------------
 
-Utilizado POSTMAN para simulação de requisição do lado cliente.
+Para facilitar os testes, foi implementado no projeto a dependência do SWAGGER, uma interface amigável para acesso aos ENDPOINTS do projeto. 
 
-Tempo gasto para desenvolvimento = 30 minutos.
+Abra o browser de sua preferência, e entre na seguinte URL:
 
-Prazo para entrega = 15/08/2016
+http://localhost:8080/swagger-ui.html
 
-Caso seja necessário, utilizarei o tempo restante para acrescentar mais funcionalidades e frontend como PLUS ao projeto.
